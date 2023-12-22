@@ -66,4 +66,12 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
     />
 
+    <Button
+        android:id="@+id/buttonQuestion"
+        android:layout_width="295dp"
+        android:layout_height="64dp"
+        android:text="Do you have a question?"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="496dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

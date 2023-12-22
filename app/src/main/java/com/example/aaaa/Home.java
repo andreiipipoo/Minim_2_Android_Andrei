@@ -14,6 +14,8 @@ public class Home extends AppCompatActivity {
     Button shopDash1;
     Button shopDash2;
 
+    Button question;
+
     Button logout;
     private ProgressBar progressBar;
     private void clearAuthenticationInfo() {
@@ -55,6 +57,16 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 progressBar.setVisibility(View.VISIBLE);
                 Intent i = new Intent (Home.this, ShopDashboard2.class);
+                startActivity(i);
+            }
+        });
+
+        question = (Button) findViewById(R.id.buttonQuestion);
+        question.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                progressBar.setVisibility(View.VISIBLE);
+                Intent i = new Intent (Home.this, FormularioQuestion.class);
                 startActivity(i);
             }
         });

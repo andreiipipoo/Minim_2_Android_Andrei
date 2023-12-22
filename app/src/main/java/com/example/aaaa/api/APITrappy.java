@@ -2,6 +2,7 @@ package com.example.aaaa.api;
 
 import java.util.List;
 import com.example.aaaa.models.Item;
+import com.example.aaaa.models.Question;
 import com.example.aaaa.models.Usuario;
 import com.example.aaaa.models.LoginModel;
 import com.example.aaaa.models.RegisterModel;
@@ -32,5 +33,8 @@ public interface APITrappy {
 
         @GET("items/shop")
         Call<Item> getItems(@Body Item item);
+
+        @POST("player/question")
+        Call<Void> postQuestion(@Body Question question);
 }
 
